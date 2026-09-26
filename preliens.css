@@ -34,7 +34,7 @@
 	vertical-align: baseline;
 	font-size: var(--s-size);
     letter-spacing: 1px;
-	font-family: vat(--font);
+	font-family: var(--font);
 }
 
 .vt-preliens-name sub.dispo {
