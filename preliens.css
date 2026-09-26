@@ -12,9 +12,10 @@
 }
 
 .vt-preliens-tw-wrap {
-	display: flex;
 	flex-wrap: wrap;
-	gap: 6px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .vt-preliens-name {
