@@ -29,11 +29,11 @@
 }
 
 .vt-preliens-name sub {
-	font-family: var(--font);
-	font-size: var(--s-size);
-	letter-spacing: 1px;
-	vertical-align: baseline;
+	color: var(--text-muted);
 	text-shadow: none;
+	vertical-align: baseline;
+	font-size: var(--s-size);
+    letter-spacing: 1px;
 }
 
 .vt-preliens-name sub.dispo {
