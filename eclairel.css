@@ -61,7 +61,6 @@
 	);
 }
 
-/* fondu du bas de l'image vers le fond du bloc, pour la lisibilité du label */
 .ec-holo-fade {
 	position: absolute;
 	bottom: 0;
