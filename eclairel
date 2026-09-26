@@ -1,0 +1,160 @@
+.ec {
+	max-width: 520px;
+	background: var(--bg-2);
+	border: 0.5px solid color-mix(in srgb, var(--g-air) 30%, transparent);
+	border-radius: 8px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.ec-header {
+	padding: 11px 16px;
+	border-bottom: 0.5px solid color-mix(in srgb, var(--g-air) 15%, transparent);
+	background: color-mix(in srgb, var(--g-air) 5%, transparent);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.ec-header-label {
+	font-size: 10px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: var(--g-air);
+	opacity: 0.8;
+}
+
+.ec-header-status {
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--text-muted);
+	opacity: 0.45;
+}
+
+.ec-holo {
+	position: relative;
+	width: 100%;
+	height: 180px;
+	overflow: hidden;
+	border-bottom: 0.5px solid color-mix(in srgb, var(--g-air) 10%, transparent);
+}
+
+.ec-holo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	opacity: 0.5;
+	filter: saturate(0.45) brightness(1.15) var(--filter-2);
+}
+
+.ec-holo-overlay {
+	position: absolute;
+	inset: 0;
+	background: repeating-linear-gradient(
+		0deg,
+		color-mix(in srgb, var(--g-air) 8%, transparent) 0px,
+		color-mix(in srgb, var(--g-air) 4%, transparent) 1px,
+		transparent 1px,
+		transparent 4px
+	);
+}
+
+/* fondu du bas de l'image vers le fond du bloc, pour la lisibilité du label */
+.ec-holo-fade {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 55%;
+	background: linear-gradient(to top, var(--bg-2), transparent);
+}
+
+.ec-holo-label {
+	position: absolute;
+	bottom: 8px;
+	right: 12px;
+	font-size: 9px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: var(--g-air);
+	opacity: 0.5;
+}
+
+.ec-meta {
+	padding: 12px 16px;
+	border-bottom: 0.5px solid color-mix(in srgb, var(--g-air) 10%, transparent);
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	text-align: left;
+}
+
+.ec-meta-row {
+	display: flex;
+	gap: 12px;
+	align-items: baseline;
+}
+
+.ec-meta-lbl {
+	font-size: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--g-air);
+	opacity: 0.6;
+	flex-shrink: 0;
+	width: 30px;
+}
+
+.ec-meta-val {
+	font-size: var(--m-size);
+	color: var(--text);
+}
+
+.ec-body {
+	padding: 18px 16px;
+	border-left: 2px solid color-mix(in srgb, var(--g-air) 25%, transparent);
+}
+
+.ec-msg {
+	font-weight: 400;
+	font-style: italic;
+	line-height: var(--line-h);
+	color: var(--text-muted);
+	margin: 0;
+}
+
+.ec-footer {
+	padding: 8px 16px;
+	border-top: 0.5px solid color-mix(in srgb, var(--g-air) 10%, transparent);
+	background: color-mix(in srgb, var(--g-air) 3%, transparent);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.ec-footer-lbl {
+	font-size: 9px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--text-muted);
+	opacity: 0.4;
+}
+
+.ec-stability {
+	display: flex;
+	gap: 4px;
+}
+
+.ec-bar {
+	width: 12px;
+	height: 3px;
+	border-radius: 1px;
+	background: color-mix(in srgb, var(--g-air) 20%, transparent);
+}
+
+.ec-bar.on {
+	background: var(--g-air);
+	opacity: 0.65;
+}
