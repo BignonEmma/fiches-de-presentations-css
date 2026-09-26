@@ -165,3 +165,46 @@
 	text-align: justify;
 	hyphens: auto;
 }
+
+.vt-preliens-linkset {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin-top: 8px;
+}
+ 
+/* une ligne = un lien déjà établi */
+.vt-preliens-link {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding-top: 16px;
+	border-top: var(--line);
+}
+ 
+.vt-preliens-link:first-child {
+	padding-top: 0;
+	border-top: none;
+}
+ 
+.vt-preliens-link-names {
+	font-family: var(--font);
+	font-weight: 700;
+	font-size: var(--n-size);
+	color: var(--text);
+}
+ 
+.vt-preliens-link-sep {
+	color: var(--accent-3);
+	font-weight: 400;
+	margin: 0 8px;
+}
+ 
+.vt-preliens-link-text {
+	margin: 0;
+	font-size: var(--n-size);
+	color: var(--text-muted);
+	line-height: var(--line-h);
+	text-align: justify;
+	hyphens: auto;
+}
